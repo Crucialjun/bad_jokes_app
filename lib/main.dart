@@ -15,18 +15,45 @@ class MyApp extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text("What do you call a pencil with two erasers?"),
-              Text("Pointless"),
+              Container(
+                margin: EdgeInsets.all(25),
+                child: Text(
+                  "What do you call a pencil with two erasers?",
+                  style: TextStyle(fontSize: 27.5, fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.fromLTRB(15, 5, 15, 45),
+                child: Text(
+                  "Pointless",
+                  style: TextStyle(fontSize: 22.5, fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.center,
+                ),
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  FloatingActionButton(
-                    onPressed: null,
-                    child: Icon(Icons.arrow_left_rounded),
+                  Container(
+                    margin: EdgeInsets.fromLTRB(15, 0, 15, 0),
+                    child: FloatingActionButton(
+                        onPressed: null,
+                        child: Icon(
+                          Icons.arrow_left_rounded,
+                          size: 60,
+                        ),
+                        backgroundColor: Colors.orange),
                   ),
-                  FloatingActionButton(
-                    onPressed: null,
-                    child: Icon(Icons.arrow_right_rounded),
+                  Container(
+                    margin: EdgeInsets.fromLTRB(15, 0, 15, 0),
+                    child: FloatingActionButton(
+                      onPressed: null,
+                      child: Icon(
+                        Icons.arrow_right_rounded,
+                        size: 60,
+                      ),
+                      backgroundColor: Colors.orange,
+                    ),
                   ),
                 ],
               )
